@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import {
   Card,
@@ -55,7 +55,6 @@ const AuthCard = ({ type }: { type: string }) => {
   const setValidConfirmPasswordStatus = (bool: boolean) => {
     setIsValidFormatConfirmPassword(bool);
   };
-
   return (
     <>
       <Card className="min-w-[30%] m-auto">
