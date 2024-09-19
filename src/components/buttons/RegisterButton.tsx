@@ -17,7 +17,7 @@ const RegisterButton = ({
   isFieldEmpty: boolean;
 }) => {
   const router = useRouter();
-  router.prefetch("/create-account");
+  // router.prefetch("/create-account"); //window is not define error when rendering server side
   const emailPattern = new RegExp(
     "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
   );
