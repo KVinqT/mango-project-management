@@ -1,7 +1,6 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { Input } from "./Input";
-import { useInputRef } from "@/hooks/useInputRef";
 
 const EmailInput = ({
   onSendData,
@@ -9,9 +8,6 @@ const EmailInput = ({
   onSendData: (email: string) => void;
 }) => {
   const inputRef = useRef(null);
-  useEffect(() => {
-    useInputRef(inputRef);
-  });
   return (
     <div>
       <p className="archivo-font font-semibold">Email</p>

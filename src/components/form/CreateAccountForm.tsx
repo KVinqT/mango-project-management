@@ -18,8 +18,10 @@ import { useForm } from "react-hook-form";
 import { RadioGroup, RadioGroupItem } from "../radio/Radio";
 import UsageSelect from "../select/UsageSelect";
 import CarrierSelect from "../select/CarrierSelect";
+import { useRouter } from "next/navigation";
 
 const CreateAccountForm = () => {
+  const router = useRouter();
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -138,7 +140,13 @@ const CreateAccountForm = () => {
                 </FormItem>
               )}
             />
-            <Button type="submit" className="archivo-font font-semibold mt-6">
+            <Button
+              type="submit"
+              className="archivo-font font-semibold mt-6"
+              onClick={() => {
+                router.replace("/work-space");
+              }}
+            >
               Create account
             </Button>
           </div>
