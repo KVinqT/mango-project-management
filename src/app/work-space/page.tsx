@@ -18,7 +18,7 @@ const WorkSpace = () => {
           {/* task card */}
           <div className="flex justify-between mr-4 flex-wrap">
             {taskCardTypes.map((t) => (
-              <TaskBox task={t} />
+              <TaskBox task={t} key={t.type} />
             ))}
           </div>
           {/* dashboard */}
