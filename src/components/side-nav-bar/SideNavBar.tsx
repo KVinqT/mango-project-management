@@ -22,19 +22,19 @@ const SideNavBar = () => {
             alt="Logo of the mango org"
           />{" "}
           <div className="lg:mt-14 sm:ml-5 lg:ml-0 flex lg:flex-col justify-center items-center cursor-pointer gap-6">
-            <div className="rounded-full hover:bg-[#e9e8e8] hover:transition-transform duration-300 ease-linear">
+            <div className="rounded-full hover:bg-[#f1f1f1] hover:transition-transform duration-300 ease-linear">
               <LayoutGrid size={20} className="m-2" />
             </div>
-            <div className="rounded-full hover:bg-[#e9e8e8] hover:transition-transform duration-300 ease-linear">
+            <div className="rounded-full hover:bg-[#f1f1f1] hover:transition-transform duration-300 ease-linear">
               <CirclePlus size={20} className="m-2" />
             </div>
-            <div className="rounded-full hover:bg-[#e9e8e8] hover:transition-transform duration-300 ease-linear">
+            <div className="rounded-full hover:bg-[#f1f1f1] hover:transition-transform duration-300 ease-linear">
               <Send size={20} className="m-2" />
             </div>
-            <div className="rounded-full hover:bg-[#e9e8e8] hover:transition-transform duration-300 ease-linear">
+            <div className="rounded-full hover:bg-[#f1f1f1] hover:transition-transform duration-300 ease-linear">
               <UsersRound size={20} className="m-2" />
             </div>
-            <div className="rounded-full hover:bg-[#e9e8e8] hover:transition-transform duration-300 ease-linear">
+            <div className="rounded-full hover:bg-[#f1f1f1] hover:transition-transform duration-300 ease-linear">
               <Bell size={20} className="m-2" />
             </div>
           </div>

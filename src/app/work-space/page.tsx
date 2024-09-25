@@ -6,7 +6,7 @@ import {
   TaskBox,
 } from "@/components/box";
 import React from "react";
-import { taskCardTypes } from "../../data";
+import { taskCardData } from "../../data";
 import { PersonalChart } from "@/components/chart";
 
 const WorkSpace = () => {
@@ -18,7 +18,7 @@ const WorkSpace = () => {
           {/* task card */}
           <div className="max-w-full overflow-hidden">
             <div className="flex sm:justify-around lg:justify-between lg:mr-4 sm:flex-wrap gap-5 sm:gap-0 sm:m-auto overflow-scroll sm:overflow-hidden">
-              {taskCardTypes.map((t) => (
+              {taskCardData.map((t) => (
                 <TaskBox task={t} key={t.type} />
               ))}
             </div>

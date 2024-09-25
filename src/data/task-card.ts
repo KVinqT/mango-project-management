@@ -1,4 +1,4 @@
-export const taskCardTypes = [
+export const taskCardData = [
   {
     type: "Priority Tasks",
     color: "#D4FF70",

@@ -1,3 +1,3 @@
-import { taskCardTypes } from "./task-card";
+import { taskCardData } from "./task-card";
 
-export { taskCardTypes };
+export { taskCardData };
