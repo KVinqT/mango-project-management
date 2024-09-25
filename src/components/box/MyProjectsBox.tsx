@@ -5,7 +5,7 @@ import NestedProjectBox from "./NestedProjectBox";
 
 const MyProjectsBox = () => {
   return (
-    <Card className="rounded-3xl bg-[#EEEEEC]">
+    <Card className="rounded-3xl bg-[#EEEEEC] xl:min-w-[300px]">
       <CardHeader className="h-[60px]">
         <CardTitle className="flex justify-between">
           <p className="archivo-font text-lg">My Projects</p>

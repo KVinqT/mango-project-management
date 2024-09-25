@@ -30,7 +30,10 @@ const NestedTasksBox = () => {
             </div>
           </div>
         </div>
-        <Badge variant="outline" className="archivo-font text-xs bg-[#E3F7BA]">
+        <Badge
+          variant="outline"
+          className="archivo-font lg:text-[11px] lg:ml-2 xl:text-xs xl:ml-0 bg-[#E3F7BA]"
+        >
           Completed
         </Badge>
       </div>

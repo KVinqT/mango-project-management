@@ -9,16 +9,19 @@ import { Avatar, AvatarFallback, AvatarImage } from "../avatar/Avatar";
 
 const SideNavBar = () => {
   return (
-    <div className="h-[95%] flex flex-col justify-around fixed items-center rounded-2xl ml-10 mt-4 border shadow-lg">
-      <div className="h-[95%] flex justify-between flex-col items-center p-3">
-        <div className="flex flex-col justify-center items-center">
+    <div
+      className="hidden sm:flex lg:h-[95%] sm:w-[65%] lg:w-[70px] sm:fixed justify-around items-center rounded-2xl lg:ml-6 xl:ml-10 mt-4 border shadow-md 
+    sm:top-1/1 sm:left-1/2 sm:transform sm:-translate-x-1/2 lg:top-auto lg:left-auto lg:transform-none bg-gradient-to-b from-white/80 to-transparent backdrop-blur-lg"
+    >
+      <div className="h-full flex justify-between lg:flex-col items-center sm:p-2 lg:p-3 sm:w-[95%] lg:w-full">
+        <div className="flex lg:flex-col justify-center items-center">
           <Image
             src="/Mango.png"
             width={35}
             height={35}
             alt="Logo of the mango org"
           />{" "}
-          <div className="mt-14 flex flex-col justify-center items-center cursor-pointer gap-6">
+          <div className="lg:mt-14 sm:ml-5 lg:ml-0 flex lg:flex-col justify-center items-center cursor-pointer gap-6">
             <div className="rounded-full hover:bg-[#e9e8e8] hover:transition-transform duration-300 ease-linear">
               <LayoutGrid size={20} className="m-2" />
             </div>

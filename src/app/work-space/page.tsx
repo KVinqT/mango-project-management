@@ -13,21 +13,23 @@ const WorkSpace = () => {
   return (
     <div className="relative">
       <SideNavBar />
-      <div className="flex justify-end">
-        <div className="w-[90%] mt-4">
+      <div className="flex lg:justify-end w-full">
+        <div className="w-[92%] sm:w-[95%] lg:w-[90%] mt-6 sm:mt-28 m-auto lg:m-0">
           {/* task card */}
-          <div className="flex justify-between mr-4 flex-wrap">
-            {taskCardTypes.map((t) => (
-              <TaskBox task={t} key={t.type} />
-            ))}
+          <div className="max-w-full overflow-hidden">
+            <div className="flex sm:justify-around lg:justify-between lg:mr-4 sm:flex-wrap gap-5 sm:gap-0 sm:m-auto overflow-scroll sm:overflow-hidden">
+              {taskCardTypes.map((t) => (
+                <TaskBox task={t} key={t.type} />
+              ))}
+            </div>
           </div>
           {/* dashboard */}
-          <div className="mt-4 flex w-full">
+          <div className="mt-6 flex flex-wrap justify-center sm:flex-wrap-reverse lg:flex-nowrap w-full">
             <PersonalChart />
-            <div className="ml-4 w-[65%]">
-              <div className="flex">
+            <div className="lg:ml-4 min-w-[60%] sm:w-full">
+              <div className="mt-6 sm:mt-0 sm:flex sm:flex-row flex flex-col">
                 <MyTasksBox />
-                <div className="ml-4 w-[50%] mr-4">
+                <div className="mt-6 sm:mt-0 sm:ml-4 sm:w-[50%] lg:mr-4">
                   <div className="flex flex-col">
                     <MyProjectsBox />
                     <MyMeetingsBox />

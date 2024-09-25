@@ -60,7 +60,7 @@ const PersonalChart = () => {
   }, []);
 
   return (
-    <Card className="flex flex-col w-[35%] h-full rounded-2xl cursor-pointer border border-black">
+    <Card className="flex flex-col w-full sm:w-[500px] lg:w-[40%] sm:m-auto sm:mt-6 lg:m-0 lg:mt-0 h-full rounded-2xl cursor-pointer border border-black">
       <CardHeader className="items-center pb-0">
         <CardTitle>Pie Chart - Donut with Text</CardTitle>
         <CardDescription>January - June 2024</CardDescription>

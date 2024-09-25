@@ -5,7 +5,7 @@ import NestedTasksBox from "./NestedTaskBox";
 
 const MyTasksBox = () => {
   return (
-    <Card className="w-[50%] h-full rounded-3xl bg-[#EEEEEC]">
+    <Card className="sm:w-[50%] h-full rounded-3xl bg-[#EEEEEC]">
       <CardHeader className="h-[60px]">
         <CardTitle className="flex justify-between">
           <p className="archivo-font text-lg">My Tasks</p>

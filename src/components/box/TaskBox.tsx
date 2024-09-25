@@ -31,7 +31,7 @@ const TaskBox = ({ task }: any) => {
   };
   return (
     <Card
-      className="w-[280px] rounded-3xl cursor-pointer hover:border hover:border-black"
+      className="min-w-[220px] sm:w-[290px] lg:w-[225px] xl:w-[280px] rounded-3xl sm:mt-3 lg:mt-4 cursor-pointer hover:border hover:border-black overflow-auto"
       style={{ backgroundColor: task.color }}
     >
       <CardHeader>
